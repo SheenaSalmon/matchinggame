@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
 *{
     margin:0;
     padding:0;
@@ -5,20 +7,19 @@
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Oswald', sans-serif;
     width: 100vw;
     height: 100vh;
-/* display:grid; */
+
 margin: auto;
 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+   
+    background-color: #4EC5C1;
 }
 
 #matchplace{
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
 
     display: flex;
     justify-content: center;
@@ -30,13 +31,14 @@ margin: auto;
 }
 
 .card-container{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 position: relative;
-   margin:  10px;
+   margin: 5px;
    perspective: 1000px;
    transform-style: preserve-3d;
    transform: 1s;
+   transition: all 1s ease-out;
 
 
 }
@@ -49,6 +51,7 @@ position: relative;
     border-radius:7px;
   transform: rotateY(180deg);
     border:2px solid black;
+    background-color: white;
 
 }
 .card-img{
@@ -58,7 +61,7 @@ position: relative;
 }
 
 .back-card{
-    background-color: cornflowerblue;
+    background-color: #EC576B;
     
   
 
@@ -112,4 +115,9 @@ position: relative;
    text-decoration: none;
    color:white;
    
+}
+.title-game{
+    text-align: center;
+    margin-top:1rem;
+    color:white
 }
